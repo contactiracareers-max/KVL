@@ -1,7 +1,7 @@
 {
-    "version": 2,
-    "outputDirectory": "public",
-    "rewrites": [
-          { "source": "/api/:path*", "destination": "/api/:path*" }
-    ]
+  "version": 2,
+  "outputDirectory": "public",
+  "rewrites": [
+    { "source": "/api/:path*", "destination": "/api/:path*" }
+  ]
 }
