@@ -413,8 +413,7 @@ input[type=number]::-webkit-inner-spin-button{-webkit-appearance:none}
       <div style="font-size:10px;color:var(--t2);margin-bottom:12px;line-height:1.8">
         Dissolving a company archives ALL its history as MEMORY (viewable forever). Each member's <strong style="color:var(--g)">50% of their individual contribution points</strong> transfers to their newly assigned company. Photos, data and submissions are NEVER deleted. This cannot be undone.
       </div>
-      <div class="fg" style="margin-bottom:12px">
-        <label class="fl">Company to Dissolve</label>
+DISSOLVE        <label class="fl">Company to Dissolve</label>
         <select class="fs" id="dissolveCoSel" onchange="previewDissolve()">
           <option value="">— Select company to dissolve —</option>
         </select>
@@ -1194,14 +1193,14 @@ function confirmDissolve(){
   // Read per-member reassignment from preview dropdowns
   const selects=document.querySelectorAll('.mem-reassign-sel');
   if(!selects.length){toast('Click the company dropdown first to load members','er');return;}
-  if(!confirm('DISSOLVE "'+co.name+'"?
+      if(!confirm(`DISSOLVE "${co.name}"?
 
 This will:
 • Archive all history permanently as MEMORY
 • Transfer each member's 50% contribution to their assigned company
 • Cannot be undone
 
-Press OK to confirm.'))return;
+Press OK to confirm.`))return;
 
   const mems=S.parts.filter(p=>p.co===co.name&&!p.dissolved);
   if(!S.dissolved)S.dissolved=[];
