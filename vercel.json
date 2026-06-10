@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "rewrites": [
+    { "source": "/api/:path*", "destination": "/api/index.js" },
+    { "source": "/(.*)", "destination": "/public/index.html" }
+  ],
+  "env": {
+    "VERCEL_TOKEN": "vcp_5nguVzyiyHEuCNi38fOVOq2dltHc4UOlPhVMgKHgUYJDV5rLLF1OnrgG",
+    "VERCEL_PROJECT_ID": "prj_mpOE7BHc5B04ExLZzn50ZBRkpuPN",
+    "VERCEL_TEAM_ID": "team_bK3DuWHqm78H2RJSY75Ay9pr",
+    "KVL_STATE": "e30="
+  }
+}
